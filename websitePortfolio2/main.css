@@ -1,0 +1,294 @@
+/*-------- Global --------*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+html {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 100;
+}
+body {
+	width: 60%;
+	margin: auto;
+	background-image: url(images/BG.png);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.blue {
+	color: #027BFF;
+}
+.red {
+	color: #FF5733;
+}
+h1 {
+	font-size: 60px;
+	font-weight: 550;
+	color: #17191A;
+}
+h2 {
+	font-size: 50px;
+	font-weight: 400;
+	color: #17191A;
+}
+h5 {
+	font-size: 20px;
+	margin-top: 10px;
+	color: #17191A;
+}
+p {
+	color: #8F9EA5;
+	opacity: 0.8;
+	font-weight: 100;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+/*-------- Nav --------*/
+.nav {
+	display: flex;
+	align-items: center;
+	height: 100px;
+}
+.contactMe, .navIcons {
+	flex: 1;
+}
+.navIcons {
+	text-align: right;
+	background-color: transparent;
+}
+.navIcons a, .contactMe a, .contactMe img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.navIcons a {
+	margin-left: 40px;
+}
+.contactMe a {
+	color: #027BFF;
+	text-decoration: none;
+	font-size: 15px;
+}
+.contactMe img {
+	margin-right: 0px;
+}
+
+/*-------- Landing --------*/
+.landing {
+	height: 100vh;
+	position: relative;
+	margin-bottom: 6em;
+}
+.landingWrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+ul {
+	list-style: none;
+	margin-top: 5px;
+	line-height: 20px;
+}
+.landingL {
+	margin-top: 2em;
+}
+.scroll {
+	position: absolute;
+	bottom: 180px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+#ip2 {
+    border-radius: 10px;
+    border: 0.5px solid #DAF7A6;
+    padding: 20px; 
+    width: 4px;
+    height: 0.05px;
+}
+
+
+/*-------- Skills --------*/
+.skills {
+	text-align: center;
+	margin-bottom: 30em;
+}
+.skills p {
+	margin-bottom: 30px;
+}
+.skills img {
+	width: 40px;
+	margin: 0 15px;
+}
+.skills a {
+	font-size: 20px;
+}
+.skill-bubble-1 {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	background: #867bfb;
+	padding: 0.5em 2em;
+	border-radius: 40px;
+	margin: 1em 0;
+	transition: 0.3s;
+}
+.skill-bubble-2 {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	background: #ccff66;
+	padding: 0.5em 2em;
+	border-radius: 40px;
+	margin: 1em 0;
+	transition: 0.3s;
+}
+.skill-bubble-3 {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	background: #ffbf00;
+	padding: 0.5em 2em;
+	border-radius: 40px;
+	margin: 1em 0;
+	transition: 0.3s;
+}
+.skill-bubble-4 {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	background: #ff99cc;
+	padding: 0.5em 2em;
+	border-radius: 40px;
+	margin: 1em 0;
+	transition: 0.3s;
+}
+
+
+/*-------- Work 01 --------*/
+.work {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20em;
+}
+.work > .workText {
+	position: absolute;
+	top: 85px;
+}
+.work > .workText > .underline {
+	display: block;
+	background-color: #027BFF;
+	height: 3px;
+	width: 61px;
+	margin-top: 5px;
+}
+.work > .workImg {
+	width: 85%;
+	float: right;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+.work ul {
+	position: absolute;
+	bottom: 0;
+	right: 86%;
+}
+.work ul li {
+	margin-top: 20px;
+}
+
+
+/*-------- Work 02 --------*/
+.work2 {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20em;
+}
+.work2 > .workText {
+	position: absolute;
+	top: 90px;
+	right: 0;
+	text-align: right;
+}
+.work2 > .workText > .underline {
+	display: block;
+	background-color: #027BFF;
+	height: 3px;
+	width: 61px;
+	margin-top: 5px;
+	float: right;
+}
+.work2 > .workImg {
+	width: 70%;
+	float: left;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+.work2 ul {
+	position: absolute;
+	bottom: 0;
+	left: 86%;
+}
+.work2 ul li {
+	margin-top: 20px;
+}
+
+
+/*-------- Work 01 and 02 --------*/
+.work a, .work2 a {
+	text-decoration: none;
+	color: #17191A;
+
+}
+
+
+
+/*-------- Footer --------*/
+.footer {
+	backgroung-image: url(images/Dribbble_Blue_Large.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 320px;
+	padding-bottom: 7em;
+	text-align: center;
+}
+.footer a {
+	color: #027BFF;
+	text-decoration: none;
+}
+.underlineSmall {
+	display: block;
+	height: 3px;
+	width: 41px;
+	margin: 5px auto 0 auto;
+	background-color: #027BFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
